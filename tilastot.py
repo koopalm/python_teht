@@ -1,3 +1,5 @@
+import statistics
+
 # Kerätään käyttäjältä luvut
 lukulista_str = input("Syötä haluamasi luvut pilkulla erotettuna:")
 lukulista_ennen_int = (lukulista_str.split(","))
@@ -12,4 +14,8 @@ except:
 # Tulostetaan min ja max
 maksimi = max(lukulista)
 minimi = min(lukulista)
+keskiarvo = statistics.mean(lukulista)
+mediaani = statistics.median(lukulista)
+moodi = statistics.mode(lukulista)
 print(f'Maximi {maksimi}\nMinimi {minimi}')
+print(f'Keskiarvo {keskiarvo}\nMediaani {mediaani}\nMoodi {moodi}')
