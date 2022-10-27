@@ -1,0 +1,15 @@
+import boto3
+
+
+def create_instances():
+    ec2 = boto3.resource('ec2')
+    ec2.create_instances(
+            ImageId="ami-09d3b3274b6c5d4aa",
+            MinCount=1,
+            MaxCount=1,
+            InstanceType="t2.micro",
+            KeyName="katri-kp"
+        )
+
+if __name__ == "__main__":
+    create_instances()
