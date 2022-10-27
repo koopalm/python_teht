@@ -14,5 +14,6 @@ sanajono = ""
 for sana in sanalista:
     sanajono += sana
 
-with open("uusitiedosto.txt", "a") as uusi_tiedosto:
+with open("uusitiedosto2.txt", "a") as uusi_tiedosto:
     uusi_tiedosto.write(sanajono)
+    
