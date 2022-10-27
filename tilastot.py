@@ -1,9 +1,7 @@
 import statistics
 
-
-
 # Kerätään käyttäjältä luvut
-parser = argparse.ArgumentParser()
+
 lukulista_str = input("Syötä haluamasi luvut pilkulla erotettuna:")
 lukulista_ennen_int = (lukulista_str.split(","))
 print(lukulista_ennen_int)
